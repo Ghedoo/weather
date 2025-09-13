@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Clim8</title>
+
+  <!-- خطوط Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- أيقونات Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- ملف CSS الرئيسي -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- أيقونة الموقع (favicon) -->
+  <link rel="icon" href="imag/logo.png">
+</head>
+<body>
+
+  <!-- =======================
+       Navbar
+  ======================= -->
+  <nav>
+    <!-- شعار الموقع مع أنيميشن Lottie -->
+    <div class="logo">
+      <div id="nav-icon" style="width:40px; height:40px;"></div>
+    </div>
+
+    <!-- روابط التنقل -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <!-- زر الهامبرغر للموبايل -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- =======================
+       Main App
+  ======================= -->
+  <div class="app">
+
+    <!-- إدخال اسم المدينة + زر البحث -->
+    <div class="input-wrapper">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- عنوان الصفحة ووقت آخر تحديث -->
+    <header>
+      <h1 id="title">London</h1>
+      <p id="meta">Updated: now</p>
+    </header>
+
+    <!-- جهاز الهاتف الافتراضي -->
+    <div class="device">
+      <div class="notch"></div> <!-- النوتش العلوي للجهاز -->
+
+      <!-- Tabs للموبايل -->
+      <div class="tabs" id="tabs">
+        <button data-index="0" class="active">Today</button>
+        <button data-index="1">Tomorrow</button>
+        <button data-index="2">After</button>
+      </div>
+
+      <!-- كروت الطقس -->
+      <div class="cards" id="forecast-cards"></div>
+    </div>
+  </div>
+
+  <!-- =======================
+       FAB (Floating Action Button)
+  ======================= -->
+  <div class="fab">
+    <!-- أيقونة رئيسية للFAB -->
+    <div id="main-icon"></div>
+
+    <!-- قائمة روابط الـFAB -->
+    <ul class="fab-menu">
+      <li><a href="https://www.facebook.com/raghed.alkadre" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="https://github.com/Ghedoo"><i class="fa-brands fa-github-alt"></i></a></li>
+      <li><a href="https://www.instagram.com/ragheed_alqadri/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/ragheed-alkadre-297a19379/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    </ul>
+  </div>
+
+  <!-- =======================
+       Loader أثناء تحميل البيانات
+  ======================= -->
+  <div id="loader">
+    <div id="loader-animation"></div> <!-- أنيميشن Lottie للـLoader -->
+  </div>
+
+  <!-- =======================
+       Scripts
+  ======================= -->
+  <!-- مكتبة Lottie للأنيميشن -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- الكود الرئيسي للطقس وFAB -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
